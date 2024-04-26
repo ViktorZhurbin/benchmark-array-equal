@@ -17,7 +17,7 @@
 			task.result.error ? "NaN" : Math.round(task.result.hz);
 
 		const getSlowerBy = (index, array) => {
-			if (index === 0) return "N/A";
+			if (index === 0) return "-";
 
 			const topResult = getOpsPerSec(array[0]);
 			const currentResultResult = getOpsPerSec(array[index]);
